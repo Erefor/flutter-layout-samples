@@ -1,6 +1,5 @@
 import 'package:design_pages/Widgets/CustomCard.dart';
 import 'package:design_pages/Widgets/CustomTextButton.dart';
-import 'package:design_pages/Widgets/VerticalPageView.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -13,7 +12,6 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   
   @override
   Widget build(BuildContext context) {
-    final _screenSize = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Color(0xff28527a),
       body: Center(
