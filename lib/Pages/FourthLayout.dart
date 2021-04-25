@@ -23,6 +23,7 @@ class BackgroundImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -38,7 +39,7 @@ class BackgroundImage extends StatelessWidget {
           ),
         ),
         Container(
-          height: 645,
+          height: size.height * 0.79,
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.white,
@@ -54,6 +55,7 @@ class BackgroundImage extends StatelessWidget {
 class Content extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Column(
       children: <Widget>[
         SizedBox(width: double.infinity,height: 150,),
