@@ -6,7 +6,6 @@ final String descrip = 'Aliquip enim minim in veniam duis elit. Aute magna sint 
 class SecondLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final _screenSize = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.pink,
       body: Stack(

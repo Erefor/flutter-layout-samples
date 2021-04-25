@@ -55,7 +55,6 @@ class BackgroundImage extends StatelessWidget {
 class Content extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     return Column(
       children: <Widget>[
         SizedBox(width: double.infinity,height: 150,),
