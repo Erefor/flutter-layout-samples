@@ -144,10 +144,11 @@ class Event extends StatelessWidget {
   final String time;
   @override
   Widget build(BuildContext context) {
+    final pantalla = MediaQuery.of(context).size;
     return Container(
       margin: EdgeInsets.only(top: 10),
-      width: 370,
-      height: 110,
+      width: pantalla.width * 0.91,
+      height: pantalla.height * 0.12,
       decoration: BoxDecoration(
         color: Color(0xffF2F2F2),
         borderRadius: BorderRadius.all(Radius.circular(25))
