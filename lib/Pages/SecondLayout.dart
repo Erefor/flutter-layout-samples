@@ -6,10 +6,10 @@ final String descrip = 'Aliquip enim minim in veniam duis elit. Aute magna sint 
 class SecondLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final _screenSize = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.pink,
       body: Stack(
-
         children: <Widget>[
           Background(),
           Content(),
@@ -22,12 +22,13 @@ class SecondLayout extends StatelessWidget {
 class Background extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final _screenSize = MediaQuery.of(context).size;
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         SizedBox(width: double.infinity,),
         Container(
-          height: 450,
+          height: _screenSize.height  *0.6,
           width: double.infinity,
           decoration: BoxDecoration(
             color: Colors.black,
@@ -45,8 +46,9 @@ class Background extends StatelessWidget {
 class Content extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final _screenSize = MediaQuery.of(context).size;
     return Container(
-      height: 450,
+      height: _screenSize.height /2,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.only(topLeft: Radius.zero, topRight: Radius.zero, bottomRight: Radius.circular(70), bottomLeft: Radius.circular(70))
