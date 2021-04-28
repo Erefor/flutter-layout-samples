@@ -58,11 +58,13 @@ class Content extends StatelessWidget {
           SizedBox(width: double.infinity,),
           Padding(
             padding: const EdgeInsets.only(left: 20,right: 20,bottom: 10),
-            child: Text('Start with the latest trends + 3D',
-              style: GoogleFonts.geo(
-                color: Colors.black,
-                fontSize: 50,
-                wordSpacing: 2
+            child: FittedBox(
+              child: Text('Start with the latest trends + 3D',
+                style: GoogleFonts.geo(
+                  color: Colors.black,
+                  fontSize: 50,
+                  wordSpacing: 2
+                ),
               ),
             ),
           ),
@@ -71,9 +73,10 @@ class Content extends StatelessWidget {
             child: Text(descrip,
               style: GoogleFonts.niramit(
                 color: Colors.grey,
-                fontSize: 25,
+                fontSize: 20,
                 wordSpacing: 2,
               ),
+              textAlign: TextAlign.justify,
             ),
           ),
           Container(
