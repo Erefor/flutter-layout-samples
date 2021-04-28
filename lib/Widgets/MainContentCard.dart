@@ -8,8 +8,8 @@ class MainContentCard extends StatelessWidget {
       children: <Widget>[
         Container(
           margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-          height: 250,
-          width: double.infinity,
+          height: MediaQuery.of(context).size.width * 0.6,
+          width: MediaQuery.of(context).size.width * 0.9,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),
             image: DecorationImage(image: AssetImage('assets/images/primerosegunda.png'),

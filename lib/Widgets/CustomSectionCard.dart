@@ -11,12 +11,13 @@ class CustomSectionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
           //margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-          height: 110,
-          width: 160,
-          margin: EdgeInsets.only(left:20, right: 20),
+          height: MediaQuery.of(context).size.height * 0.10,
+          width: MediaQuery.of(context).size.width * 0.25,
+          margin: EdgeInsets.only(left:20, right: 20  ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),
             image: DecorationImage(image: AssetImage(pathDeImagen),
@@ -24,16 +25,20 @@ class CustomSectionCard extends StatelessWidget {
             ),
           ),
         ),
-        Text(nombre, 
-          style: GoogleFonts.roboto(
-            color: Colors.white,
-            fontSize: 20,
+        FittedBox(
+          child: Text(nombre, 
+            style: GoogleFonts.roboto(
+              color: Colors.white,
+              fontSize: 20,
+            ),
           ),
         ),
-        Text(descripcion, 
-          style: GoogleFonts.roboto(
-            color: Colors.grey,
-            fontSize: 15,
+        FittedBox(
+          child: Text(descripcion, 
+            style: GoogleFonts.roboto(
+              color: Colors.grey,
+              fontSize: 15,
+            ),
           ),
         )
       ],

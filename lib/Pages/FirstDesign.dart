@@ -20,7 +20,7 @@ class FirstDesign extends StatelessWidget {
             Column(
               children: <Widget>[
                 SizedBox(width: double.infinity,),
-                Header(),
+                FittedBox(fit: BoxFit.fitWidth, child: Header()),
                 IconsRow(),
                 MainContent(),
                 MainBodyContent()
@@ -53,7 +53,7 @@ class Header extends StatelessWidget {
     return Column(
       children: <Widget>[
         Container(
-          margin: EdgeInsets.only(top: 100),
+          margin: EdgeInsets.only(top: 10),
           child: Text('Historias para dormir', 
             style: GoogleFonts.lato(fontSize: 25, color: Colors.white)
           ),
